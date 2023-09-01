@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: nacos-provider-1
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        prefix: p1
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        group: DEFAULT_GROUP
+
+
+user:
+  haha:
+    name: sds
+    age: 12
