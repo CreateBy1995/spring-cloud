@@ -1,5 +1,6 @@
 package org.example.web;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import org.example.client.EchoFeignClient;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,6 +27,7 @@ public class EchoController implements EchoFeignClient {
     }
 
     @Override
+    @SentinelResource("userInfo22")
     public String userInfo() {
         return String.format("user info : name:%s ; age:%s", userName, userAge);
     }

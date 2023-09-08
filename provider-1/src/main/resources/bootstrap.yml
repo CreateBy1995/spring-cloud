@@ -2,6 +2,9 @@ spring:
   application:
     name: nacos-provider-1
   cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8090
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
@@ -10,9 +13,26 @@ spring:
         server-addr: 127.0.0.1:8848
         namespace: public
         group: DEFAULT_GROUP
-
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 user:
   haha:
     name: sds
     age: 12
+
+security:
+  oauth2:
+    client:
+      client-id: nacos-provider-1
+      client-secret: dcx123
+      user-authorization-uri: http://localhost:10010/oauth/authorize
+      access-token-uri: http://localhost:10010/oauth/token
+    resource:
+      jwt:
+        key-uri: http://localhost:10010/oauth/token_key

@@ -26,4 +26,9 @@ public class ConsumerController {
     public String echoAppName(){
         return  echoFeignClient.echoHello();
     }
+
+    @GetMapping("/test")
+    public String test(){
+        return  "test112";
+    }
 }

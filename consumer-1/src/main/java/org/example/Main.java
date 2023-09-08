@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableFeignClients
-@EnableDiscoveryClient(autoRegister = false)
+//@EnableDiscoveryClient(autoRegister = false)
 public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class);

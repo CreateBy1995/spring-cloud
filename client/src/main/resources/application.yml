@@ -1,0 +1,12 @@
+security:
+  oauth2:
+    client:
+      client-id: client-1
+      client-secret: dcx123
+      user-authorization-uri: http://localhost:10010/oauth/authorize
+      access-token-uri: http://localhost:10010/oauth/token
+    resource:
+      jwt:
+        key-uri: http://localhost:10010/oauth/token_key
+server:
+  port: 10030

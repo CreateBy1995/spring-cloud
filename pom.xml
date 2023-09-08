@@ -12,6 +12,9 @@
         <module>provider-1</module>
         <module>consumer-1</module>
         <module>provider-client</module>
+        <module>gateway</module>
+        <module>auth</module>
+        <module>client</module>
     </modules>
 
 

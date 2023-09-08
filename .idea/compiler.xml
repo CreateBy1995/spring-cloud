@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="client" />
         <module name="consumer-1" />
         <module name="provider-client" />
+        <module name="auth" />
+        <module name="gateway" />
         <module name="provider-1" />
       </profile>
     </annotationProcessing>
