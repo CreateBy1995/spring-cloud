@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47084345-c82f-425c-ba52-2913f2b93c8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/config/ClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/config/SSOUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/config/TokenConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/web/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/org/example/config/GateWayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/web/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/web/ConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/web/EchoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/web/EchoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/resources/bootstrap.yml" afterDir="false" />
-    </list>
+    <list default="true" id="47084345-c82f-425c-ba52-2913f2b93c8c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +62,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
     "last_opened_file_path": "D:/Work/spring-cloud",
@@ -225,65 +202,33 @@
       <option name="presentableId" value="Default" />
       <updated>1693533706354</updated>
     </task>
+    <task id="LOCAL-00001" summary="sso">
+      <option name="closed" value="true" />
+      <created>1694167227282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694167227282</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sso" />
+    <option name="LAST_COMMIT_MESSAGE" value="sso" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/endpoint/CheckTokenEndpoint.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="98" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/client/OAuth2RestTemplate.java</url>
+          <line>220</line>
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/endpoint/AuthorizationEndpoint.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/endpoint/TokenEndpoint.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/endpoint/TokenKeyEndpoint.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/endpoint/WhitelabelApprovalEndpoint.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.15.RELEASE/spring-webmvc-5.2.15.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>1235</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.3.9.RELEASE/spring-security-web-5.3.9.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebExpressionVoter.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.3.9.RELEASE/spring-security-web-5.3.9.RELEASE-sources.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.3.9.RELEASE/spring-security-web-5.3.9.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java</url>
-          <line>333</line>
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.15.RELEASE/spring-webmvc-5.2.15.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>1231</line>
-          <option name="timeStamp" value="118" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/client/filter/OAuth2ClientAuthenticationProcessingFilter.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="127" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
