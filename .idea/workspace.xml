@@ -4,11 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47084345-c82f-425c-ba52-2913f2b93c8c" name="Changes" comment="" />
+    <list default="true" id="47084345-c82f-425c-ba52-2913f2b93c8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/config/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/config/SecurityConfig2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client2/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client2/src/main/java/org/example/web/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-client/src/main/java/org/example/client/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-client/src/main/java/org/example/client/feignclient/ProductFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-dao/src/main/java/org/example/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-dao/src/main/java/org/example/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-dao/src/main/resources/mappers/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/org/example/service/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/org/example/service/utils/ReflectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-web/src/main/java/org/example/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/example/config/ClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/config/ClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/web/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/web/EchoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/web/EchoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-1/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-client/src/main/java/org/example/client/EchoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-client/src/main/java/org/example/client/EchoFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -17,6 +60,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -24,11 +69,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -65,11 +113,11 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/Work/spring-cloud",
+    "last_opened_file_path": "D:/Work/spring-cloud/product/product-dao/src/main/resources/mappers",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "editor.preferences.import"
   }
 }]]></component>
   <component name="RebelAgentSelection">
@@ -77,31 +125,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\spring-cloud\product\product-dao\src\main\resources\mappers" />
       <recent name="D:\Work\spring-cloud" />
       <recent name="D:\Work\spring-cloud\consumer-1\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.service.utils" />
+      <recent name="org.example.service.service" />
+      <recent name="org.example.client.dto" />
+      <recent name="org.example.client.feignclient" />
       <recent name="org.example.config" />
-      <recent name="org.example.web" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.auth">
-    <configuration name="auth" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.product">
     <configuration name="client" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="client" />
+      <module name="client (1)" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -112,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="consumer-1" type="Application" factoryName="Application" temporary="true">
+    <configuration name="consumer" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="consumer-1" />
       <extension name="coverage">
@@ -128,6 +167,19 @@
     <configuration name="gateway" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.GatewayApplication" />
       <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="product" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ApplicationStarter" />
+      <module name="product-web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -177,19 +229,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.provider-1-back" />
-      <item itemvalue="Application.client" />
-      <item itemvalue="Application.auth" />
+      <item itemvalue="Application.product" />
       <item itemvalue="Application.gateway" />
-      <item itemvalue="Application.consumer-1" />
+      <item itemvalue="Application.consumer" />
+      <item itemvalue="Application.client" />
       <item itemvalue="Application.provider-1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.client" />
-        <item itemvalue="Application.auth" />
-        <item itemvalue="Application.provider-1" />
+        <item itemvalue="Application.product" />
         <item itemvalue="Application.gateway" />
-        <item itemvalue="Application.consumer-1" />
+        <item itemvalue="Application.consumer" />
+        <item itemvalue="Application.provider-1" />
+        <item itemvalue="Application.client" />
       </list>
     </recent_temporary>
   </component>
@@ -210,28 +262,29 @@
       <option name="project" value="LOCAL" />
       <updated>1694167227282</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sso">
+      <option name="closed" value="true" />
+      <created>1694168481451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694168481451</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="sso" />
     <option name="LAST_COMMIT_MESSAGE" value="sso" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/client/OAuth2RestTemplate.java</url>
-          <line>220</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE-sources.jar!/org/springframework/security/oauth2/client/filter/OAuth2ClientAuthenticationProcessingFilter.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.http.converter.FormHttpMessageConverter" memberName="partConverters" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

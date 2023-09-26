@@ -5,6 +5,7 @@ import com.alibaba.nacos.api.config.annotation.NacosValue;
 import org.example.client.EchoFeignClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RefreshScope// @Value更新后实时刷新
 @RestController
+@RequestMapping("/p1")
 public class EchoController implements EchoFeignClient {
     @Value("${user.haha.name}")
     private String userName;

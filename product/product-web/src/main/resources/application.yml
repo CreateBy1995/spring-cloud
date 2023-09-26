@@ -1,0 +1,15 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: cloud-product
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_product?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8
+    username: root
+    password: sunshine
+
+mybatis:
+  mapper-locations: classpath:/mappers/*Mapper.xml
+  typeAliasesPackage: org.example.domain
+  configuration:
+    map-underscore-to-camel-case: true

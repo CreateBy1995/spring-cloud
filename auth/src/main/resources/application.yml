@@ -15,5 +15,5 @@ management:
 
 server:
   port: 10010
-#  servlet:
-#    context-path: /pjb
+  servlet:
+    context-path: /oauth-server

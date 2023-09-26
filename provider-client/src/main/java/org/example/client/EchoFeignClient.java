@@ -3,6 +3,7 @@ package org.example.client;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @Author: dongcx
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @Description:
  */
 @Component
-@FeignClient(value = "nacos-provider-1")
+@FeignClient(value = "nacos-provider-1",path = "/p1")
 public interface EchoFeignClient {
 
     @GetMapping("/hello")

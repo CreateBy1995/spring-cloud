@@ -5,10 +5,22 @@
     <file url="file://$PROJECT_DIR$/auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consumer-1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consumer-1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-client/src/main/java" charset="UTF-8" />

@@ -1,6 +1,5 @@
 package org.example.config;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
@@ -40,14 +39,15 @@ public class ClientConfig extends AuthorizationServerConfigurerAdapter {
                 //  若该值为true或支持的scope值,则会跳过用户Approve的页面, 直接授权.
                 .autoApprove(false)
                 //加上验证回调地址
-                .redirectUris("http://localhost:8080/login")
+                .redirectUris("http://localhost:10030/oauth-client/login")
+//                .redirectUris("http://localhost:10030/login")
                 .and()
-                .withClient("nacos-consumer-1")
+                .withClient("client-2")
                 .secret(new BCryptPasswordEncoder().encode("dcx123"))
                 .authorizedGrantTypes("authorization_code", "refresh_token")
                 .scopes("all")
                 .autoApprove(false)
-                .redirectUris("http://localhost:9081/login");
+                .redirectUris("http://localhost:10031/oauth-client2/login");
     }
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {

@@ -1,14 +1,16 @@
 package org.example;
 
+import org.reflections.Reflections;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.context.ApplicationContext;
+
+import java.util.*;
 
 @SpringBootApplication
-@EnableOAuth2Sso
 public class Main {
     public static void main(String[] args) {
-        SpringApplication.run(Main.class);
+        ApplicationContext context = SpringApplication.run(Main.class);
+
     }
 }

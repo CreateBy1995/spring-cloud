@@ -26,13 +26,17 @@ user:
     name: sds
     age: 12
 
-security:
-  oauth2:
-    client:
-      client-id: nacos-provider-1
-      client-secret: dcx123
-      user-authorization-uri: http://localhost:10010/oauth/authorize
-      access-token-uri: http://localhost:10010/oauth/token
-    resource:
-      jwt:
-        key-uri: http://localhost:10010/oauth/token_key
+#security:
+#  oauth2:
+#    client:
+#      client-id: nacos-provider-1
+#      client-secret: dcx123
+#      user-authorization-uri: http://localhost:10010/oauth-server/oauth/authorize
+#      access-token-uri: http://localhost:10010/oauth-server/oauth/token
+#    resource:
+#      jwt:
+#        key-uri: http://localhost:10010/oauth-server/oauth/token_key
+
+#server:
+#  servlet:
+#    context-path: /oauth-client-2
