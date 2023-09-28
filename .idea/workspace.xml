@@ -7,61 +7,21 @@
     <option name="rewriteBookmarkType" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47084345-c82f-425c-ba52-2913f2b93c8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/order/order-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-client/src/main/java/org/example/order/client/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-client/src/main/java/org/example/order/client/feignclient/OrderFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-dao/src/main/java/org/example/order/dao/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-dao/src/main/java/org/example/order/dao/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-dao/src/main/resources/mappers/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-service/src/main/java/org/example/order/service/configuration/OrderFeignConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-service/src/main/java/org/example/order/service/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-web/src/main/java/org/example/order/ApplicationStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-web/src/main/java/org/example/order/web/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/order-web/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/org/example/product/service/utils/ReflectUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider-client/src/main/java/org/example/service/client/EchoFeignClient.java" afterDir="false" />
+    <list default="true" id="47084345-c82f-425c-ba52-2913f2b93c8c" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/gateway/gateway-dao/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway-service/src/main/java/org/example/gateway/service/configuration/GatewayConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-web/src/main/java/org/example/product/ApplicationStarter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/example/config/ClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/service/config/ClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/example/config/SSOUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/service/config/SSOUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/service/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/example/config/TokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/service/config/TokenConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/example/web/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/example/service/web/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/config/CustomAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/service/config/CustomAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/service/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/config/SecurityConfig2.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/service/config/SecurityConfig2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/service/web/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client2/src/main/java/org/example/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/src/main/java/org/example/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client2/src/main/java/org/example/service/web/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/web/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-1/src/main/java/org/example/service/web/ConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/org/example/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/example/service/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/org/example/config/GateWayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/example/service/config/GateWayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-client/src/main/java/org/example/client/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-client/src/main/java/org/example/product/client/dto/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-client/src/main/java/org/example/client/feignclient/ProductFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-client/src/main/java/org/example/product/client/feignclient/ProductFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-dao/src/main/java/org/example/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-dao/src/main/java/org/example/product/dao/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-dao/src/main/java/org/example/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-dao/src/main/java/org/example/product/dao/mapper/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-dao/src/main/resources/mappers/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-dao/src/main/resources/mappers/ProductMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-service/src/main/java/org/example/service/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-service/src/main/java/org/example/product/service/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-service/src/main/java/org/example/service/utils/ReflectUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-service/src/main/java/org/example/order/service/utils/ReflectUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-web/src/main/java/org/example/ApplicationStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-web/src/main/java/org/example/product/ApplicationStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-web/src/main/java/org/example/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-web/src/main/java/org/example/product/web/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/service/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/service/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-1/src/main/java/org/example/web/EchoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-1/src/main/java/org/example/service/web/EchoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-client/src/main/java/org/example/client/EchoFeignClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-web/src/main/java/org/example/ApplicationStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-web/src/main/java/org/example/order/ApplicationStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider-client/src/main/java/org/example/client/EchoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider-client/src/main/java/org/example/service/client/EchoFeignClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +90,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/Work/spring-cloud/product/product-web/src/main/java/org/example/product",
+    "last_opened_file_path": "D:/Work/spring-cloud/gateway",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -142,11 +102,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\spring-cloud\gateway" />
       <recent name="D:\Work\spring-cloud\product\product-web\src\main\java\org\example\product" />
       <recent name="D:\Work\spring-cloud\product\product-service\src\main\java\org\example\product" />
       <recent name="D:\Work\spring-cloud\product\product-dao\src\main\java\org\example\product" />
       <recent name="D:\Work\spring-cloud\product\product-client\src\main\java\org\example\product" />
-      <recent name="D:\Work\spring-cloud\order\order-web\src\main\java\org\example\order" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.product" />
@@ -239,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695724451912</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1695890615323</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695890615323</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
