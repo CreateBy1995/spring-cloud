@@ -7,17 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="order-web" />
+        <module name="order-dao" />
+        <module name="auth" />
+        <module name="provider-client" />
+        <module name="product-service" />
+        <module name="consumer-1" />
+        <module name="provider-1" />
         <module name="product-dao" />
         <module name="product-client" />
         <module name="product-web" />
-        <module name="auth" />
-        <module name="provider-client" />
+        <module name="order-client" />
         <module name="client (1)" />
         <module name="client (2)" />
-        <module name="product-service" />
-        <module name="consumer-1" />
+        <module name="order-service" />
         <module name="gateway" />
-        <module name="provider-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
