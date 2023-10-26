@@ -24,4 +24,10 @@ public class ProductService {
         Product product = productMapper.getById(productId);
         return ReflectUtil.convert(product, ProductDTO.class);
     }
+
+//    @GlobalTransactional
+    public boolean create(ProductDTO productDTO){
+        Product product = ReflectUtil.convert(productDTO, Product.class);
+        return productMapper.create(product) > 0;
+    }
 }

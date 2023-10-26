@@ -10,4 +10,6 @@ import org.example.product.dao.domain.Product;
  */
 public interface ProductMapper {
     Product getById(@Param("productId") Long productId);
+
+    int create(Product product);
 }

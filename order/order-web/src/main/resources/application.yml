@@ -19,3 +19,6 @@ mybatis:
   typeAliasesPackage: org.example.dao.domain
   configuration:
     map-underscore-to-camel-case: true
+
+seata:
+  data-source-proxy-mode: XA

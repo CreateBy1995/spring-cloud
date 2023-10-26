@@ -18,4 +18,7 @@ public interface OrderFeignClient {
 
     @GetMapping("/getOrderAndProduct")
     String getOrderAndProduct(@RequestParam(value = "id") Long id);
+
+    @GetMapping("/doBusiness")
+    String doBusiness();
 }

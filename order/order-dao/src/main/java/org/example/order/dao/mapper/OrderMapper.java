@@ -10,4 +10,6 @@ import org.example.order.dao.domain.Order;
  */
 public interface OrderMapper {
     Order getById(@Param("orderId") Long orderId);
+
+    int create(Order order);
 }

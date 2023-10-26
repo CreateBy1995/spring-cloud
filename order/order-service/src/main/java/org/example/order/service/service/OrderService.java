@@ -37,4 +37,13 @@ public class OrderService {
         return String.format("oderId:%s, productId:%s", Optional.ofNullable(orderDTO).map(OrderDTO::getId).orElse(-1L),
                 Optional.ofNullable(productDTO).map(ProductDTO::getId).orElse(-1L));
     }
+
+    public void create(OrderDTO orderDTO){
+        if (orderDTO.getUserId() >0){
+            throw new RuntimeException("test user id ");
+        }
+        Order order = ReflectUtil.convert(orderDTO, Order.class);
+        orderMapper.create(order);
+
+    }
 }

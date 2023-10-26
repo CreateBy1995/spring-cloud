@@ -23,4 +23,9 @@ public class ProductController implements ProductFeignClient {
     public ProductDTO getProductById(Long productId) {
         return productService.getProductDTO(productId);
     }
+
+    @Override
+    public Boolean create(ProductDTO productDTO) {
+        return productService.create(productDTO);
+    }
 }
