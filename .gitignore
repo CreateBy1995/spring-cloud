@@ -7,3 +7,4 @@
 .idea
 /src/main/resources/rebel.xml
 rebel.xml
+.idea/*
