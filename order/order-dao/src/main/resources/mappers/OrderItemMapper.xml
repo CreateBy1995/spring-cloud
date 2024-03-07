@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.order.dao.mapper.OrderItemMapper">
+    <cache />
+
+    <select id="getById" resultType="org.example.order.dao.domain.OrderItem">
+        SELECT * FROM order_item WHERE id = #{orderItemId}
+    </select>
+
+    <select id="getByIdRange" resultType="org.example.order.dao.domain.OrderItem">
+        SELECT * FROM order_item WHERE id &gt; #{orderItemId}
+    </select>
+
+    <insert id="create" parameterType="org.example.order.dao.domain.OrderItem">
+        INSERT INTO order_item(order_id) VALUES (#{orderId})
+    </insert>
+
+</mapper>

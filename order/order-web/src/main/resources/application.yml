@@ -1,6 +1,79 @@
 server:
   port: 12010
 spring:
+  shardingsphere:
+    props:
+      sql-show: true
+    rules:
+      readwrite-splitting:
+        data-sources:
+          ds0:
+            write-data-source-name: ds0
+            read-data-source-names:
+              - ds0-slave
+          ds1:
+            write-data-source-name: ds1
+            read-data-source-names:
+              - ds1-slave
+      sharding:
+        # 分片算法
+        sharding-algorithms:
+          database-inline1:
+            props:
+              algorithm-expression: ds$->{user_id % 2}
+            type: INLINE
+          table-inline1:
+            props:
+              algorithm-expression: orders$->{user_id % 2}
+            type: INLINE
+        tables:
+          orders:
+            actual-data-nodes: ds$->{0..1}.orders$->{0..1}
+            database-strategy:
+              standard:
+                sharding-column: user_id
+                sharding-algorithm-name: database-inline1
+            table-strategy:
+              standard:
+                sharding-column: user_id
+                sharding-algorithm-name: table-inline1
+#      readwrite-splitting:
+#        data-sources:
+#          ds0:
+#            write-data-source-name: ds0
+#            read-data-source-names:
+#              - ds0-slave
+#          ds1:
+#            write-data-source-name: ds1
+#            read-data-source-names:
+#              - ds1-slave
+    datasource:
+#      names: master1,slave1
+      names: ds0,ds1,ds0-slave,ds1-slave
+      ds0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/cloud_order_master_0?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8
+        username: root
+        password: sunshine
+      ds0-slave:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/cloud_order_slave_0?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8
+        username: root
+        password: sunshine
+      ds1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/cloud_order_master_1?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8
+        username: root
+        password: sunshine
+      ds1-slave:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/cloud_order_slave_1?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8
+        username: root
+        password: sunshine
   cloud:
     nacos:
       discovery:
@@ -9,16 +82,26 @@ spring:
         group: TEST_GROUP
   application:
     name: cloud-order
-  datasource:
-    url: jdbc:mysql://localhost:3306/cloud_order?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8
-    username: root
-    password: sunshine
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/cloud_order?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8
+#    username: root
+#    password: sunshine
 
 mybatis:
   mapper-locations: classpath:/mappers/*Mapper.xml
   typeAliasesPackage: org.example.dao.domain
   configuration:
     map-underscore-to-camel-case: true
+    cache-enabled: false # 禁用二级缓存
+    local-cache-scope: statement # 禁用一级缓存
+
 
 seata:
-  data-source-proxy-mode: XA
+  enabled: false
+  application-id: ${spring.application.name}
+  tx-service-group: default_tx_group
+  use-jdk-proxy: true
+  enableAutoDataSourceProxy: false
+  enable-auto-data-source-proxy: false
+#  data-source-proxy-mode: XA
+

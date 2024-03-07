@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.example.order.dao.mapper.OrderMapper">
-
+    <cache />
 
     <select id="getById" resultType="org.example.order.dao.domain.Order">
         SELECT * FROM orders WHERE id = #{orderId}
     </select>
+
+    <select id="getByIdRange" resultType="org.example.order.dao.domain.Order">
+        SELECT * FROM orders WHERE id &gt; #{orderId}
+    </select>
+
+    <select id="getByIdList" resultType="org.example.order.dao.domain.Order">
+        SELECT * FROM orders WHERE id in
+        <foreach collection="orderIdList" item="item" index="index" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+        limit 10,5
+    </select>
+
+    <select id="getByIdListWithUserId" resultType="org.example.order.dao.domain.Order">
+        SELECT * FROM orders WHERE
+        user_id = #{userId}
+        and id in
+        <foreach collection="orderIdList" item="item" index="index" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+        limit 10,5
+    </select>
+
+
 
 
     <insert id="create" parameterType="org.example.order.dao.domain.Order">

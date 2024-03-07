@@ -1,6 +1,5 @@
 package org.example.order.service.business;
 
-import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.example.order.client.dto.OrderDTO;
 import org.example.order.service.service.OrderService;
@@ -23,7 +22,7 @@ public class OrderBusiness {
     @Resource
     private ProductFeignClient productFeignClient;
 
-    @GlobalTransactional
+//    @GlobalTransactional
     public void doBusiness(){
 
         ProductDTO productDTO = new ProductDTO();
@@ -34,6 +33,8 @@ public class OrderBusiness {
         orderDTO.setUserId(2L);
         orderService.create(orderDTO);
     }
+
+
 
 
 }

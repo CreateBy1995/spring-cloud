@@ -4,6 +4,7 @@ import org.example.order.client.dto.OrderDTO;
 import org.example.order.client.feignclient.OrderFeignClient;
 import org.example.order.service.business.OrderBusiness;
 import org.example.order.service.service.OrderService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,6 +35,12 @@ public class OrderController implements OrderFeignClient {
     @Override
     public String doBusiness() {
         orderBusiness.doBusiness();
+        return null;
+    }
+
+    @GetMapping("/createByLocalTrans")
+    public String createByLocalTrans(){
+        orderService.createByLocalTrans();
         return null;
     }
 
