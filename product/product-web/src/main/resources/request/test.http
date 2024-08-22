@@ -1,0 +1,11 @@
+### 查询
+GET http://localhost:12000/product/getProductById?productId=1
+
+### 写入
+POST http://localhost:12000/product/create
+Content-Type: application/json
+
+{
+  "productName": "西瓜",
+  "price": "10"
+}

@@ -1,0 +1,7 @@
+POST http://localhost:12020/route/add?name=p
+Content-Type: application/json
+
+
+### 查询
+GET http://localhost:12020/api/product/getProductById?productId=1
+Authorization:dongcongxu
