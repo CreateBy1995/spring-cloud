@@ -39,6 +39,16 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.boot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>2.1.1.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>2.1.1.RELEASE</version>
+            </dependency>
             <!-- 持久层相关 -->
             <dependency>
                 <groupId>pers.example</groupId>
@@ -49,6 +59,11 @@
                 <groupId>pers.example</groupId>
                 <artifactId>gateway-service</artifactId>
                 <version>${gateway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>1.1.4</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

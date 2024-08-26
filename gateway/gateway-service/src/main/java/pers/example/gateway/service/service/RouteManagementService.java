@@ -2,6 +2,7 @@ package pers.example.gateway.service.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.gateway.event.RefreshRoutesEvent;
 import org.springframework.cloud.gateway.filter.FilterDefinition;
 import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
@@ -26,6 +27,7 @@ import java.net.URI;
 public class RouteManagementService {
     // todo 替换成数据源
     @Autowired
+    @Qualifier(value = "configCenterDynamicRouteRepository")
     private AbstractDynamicRouteRepository dynamicRouteRepository;
 
     @Autowired

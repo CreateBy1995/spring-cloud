@@ -3,7 +3,7 @@ package pers.example.gateway.service.filter;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
-import org.apache.http.auth.AuthenticationException;
+//import org.apache.http.auth.AuthenticationException;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -29,7 +29,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         // todo auth verify
         if (StringUtils.isBlank(auth)) {
             log.error("auth verify error");
-            return Mono.error(new AuthenticationException());
+            return Mono.error(new RuntimeException());
         }
         return chain.filter(exchange);
     }

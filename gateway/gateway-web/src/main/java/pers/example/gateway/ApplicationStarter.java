@@ -1,11 +1,15 @@
 package pers.example.gateway;
 
-import org.mybatis.spring.annotation.MapperScan;
+import com.alibaba.nacos.spring.context.annotation.config.EnableNacosConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication
-@MapperScan({"pers.example.gateway.dao.mapper"})
+import javax.sql.DataSource;
+
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@EnableNacosConfig
+//@MapperScan({"pers.example.gateway.dao.mapper"})
 public class ApplicationStarter {
     public static void main(String[] args) {
         SpringApplication.run(ApplicationStarter.class);

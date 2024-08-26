@@ -1,6 +1,7 @@
 package pers.example.gateway.service.filter;
 
-import com.alibaba.nacos.shaded.com.google.common.collect.Lists;
+//import com.alibaba.nacos.shaded.com.google.common.collect.Lists;
+import com.google.common.collect.Lists;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
