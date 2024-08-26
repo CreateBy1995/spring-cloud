@@ -1,6 +1,7 @@
 package pers.example.gateway.service.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.gateway.filter.FilterDefinition;
 import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinition;
@@ -18,9 +19,10 @@ import java.util.stream.Collectors;
  * @CreateTime: 2023-10-13
  * @Description: mysql
  */
-@Component(value = "jdbcDynamicRouteRepository")
-public class JdbcDynamicRouteRepository extends AbstractDynamicRouteRepository {
+@Component(value = "configCenterDynamicRouteRepository")
+public class ConfigCenterDynamicRouteRepository extends AbstractDynamicRouteRepository {
     @Autowired
+    @Qualifier(value = "configCenterRuleService")
     private IRouteRuleService routeRuleService;
 //    @Override
 //    public List<RouteDefinition> routeListInitial() {

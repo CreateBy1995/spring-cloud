@@ -15,8 +15,8 @@ import java.util.List;
  * @Description:
  */
 @Slf4j
-@Service
-public class RouteRuleServiceImpl implements IRouteRuleService {
+@Service(value = "jdbcRuleService")
+public class JdbcRuleServiceImpl implements IRouteRuleService {
     @Autowired
     private RouteRuleMapper mapper;
 
