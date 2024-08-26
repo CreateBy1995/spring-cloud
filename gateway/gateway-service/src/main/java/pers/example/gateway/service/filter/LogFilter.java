@@ -20,17 +20,11 @@ import reactor.core.publisher.Mono;
 @Data
 @Slf4j
 @Component
-public class AuthGlobalFilter implements GlobalFilter, Ordered {
+public class LogFilter implements GlobalFilter, Ordered {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        String auth = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
-
-        if (StringUtils.isBlank(auth)) {
-            log.error("auth verify error");
-            return Mono.error(new AuthenticationException());
-        }
-        log.info("auth verify passed");
+        log.info("request is {}", exchange.getRequest());
         return chain.filter(exchange).then(
                 Mono.fromRunnable(() -> {
                     log.info("response status: {}", exchange.getResponse().getStatusCode());
@@ -40,6 +34,6 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
 
     @Override
     public int getOrder() {
-        return HIGHEST_PRECEDENCE;
+        return HIGHEST_PRECEDENCE + 1;
     }
 }
