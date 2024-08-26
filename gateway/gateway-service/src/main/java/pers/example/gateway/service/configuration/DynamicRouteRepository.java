@@ -24,6 +24,10 @@ public class DynamicRouteRepository implements RouteDefinitionRepository {
     private ApplicationEventPublisher publisher;
     private final List<RouteDefinition> routeDefinitions = new ArrayList<>();
 
+    public void routeInfoInitial(){
+
+    }
+
     @Override
     public Flux<RouteDefinition> getRouteDefinitions() {
         // 监听到RefreshRoutesEvent事件的时候会被回调，

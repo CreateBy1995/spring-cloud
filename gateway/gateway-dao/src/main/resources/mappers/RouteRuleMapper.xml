@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.example.gateway.dao.mapper.RouteRuleMapper">
+
+
+    <select id="listAll" resultType="pers.example.gateway.dao.domain.RouteRule">
+        SELECT * FROM route_rule
+    </select>
+
+    <insert id="create" parameterType="pers.example.gateway.dao.domain.RouteRule">
+        INSERT INTO route_rule (rule_id, service_id, uri, create_time)
+        VALUES (#{ruleId}, #{serviceId}, #{uri}, #{createTime});
+    </insert>
+
+</mapper>

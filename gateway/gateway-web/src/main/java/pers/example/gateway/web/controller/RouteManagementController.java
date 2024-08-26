@@ -1,10 +1,8 @@
-package pers.example.gateway.web;
+package pers.example.gateway.web.controller;
 
+import org.springframework.web.bind.annotation.*;
 import pers.example.gateway.service.service.RouteManagementService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import pers.example.gateway.service.vo.RouteRuleVO;
 
 import javax.annotation.Resource;
 
@@ -23,9 +21,10 @@ public class RouteManagementController {
         routeManagementService.addRoute(name);
         return "ok";
     }
-    @PostMapping("/clear")
-    public String clear(){
-        routeManagementService.clear();
+
+    @PostMapping("/addV2")
+    public String addV2(@RequestBody RouteRuleVO ro){
+        routeManagementService.addRoute(ro);
         return "ok";
     }
 }

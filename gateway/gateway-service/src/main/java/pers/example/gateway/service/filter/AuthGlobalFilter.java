@@ -25,17 +25,13 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String auth = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
-
+        log.info("auth verify start");
+        // todo auth verify
         if (StringUtils.isBlank(auth)) {
             log.error("auth verify error");
             return Mono.error(new AuthenticationException());
         }
-        log.info("auth verify passed");
-        return chain.filter(exchange).then(
-                Mono.fromRunnable(() -> {
-                    log.info("response status: {}", exchange.getResponse().getStatusCode());
-                })
-        );
+        return chain.filter(exchange);
     }
 
     @Override
