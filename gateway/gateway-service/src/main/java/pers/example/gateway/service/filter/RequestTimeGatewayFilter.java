@@ -17,18 +17,15 @@ import reactor.core.publisher.Mono;
 @Slf4j
 public class RequestTimeGatewayFilter implements GatewayFilter, Ordered {
 
-    private String field1;
-    private int field2;
     private static final String REQUEST_TIME_BEGIN = "requestTimeBegin";
 
+
     public RequestTimeGatewayFilter(RequestTimeGatewayFilterFactory.Config config){
-        field1 = config.getField1();
-        field2 = config.getField2();
+
     }
+
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        log.info("RequestTimeGatewayFilter config, f1:{}, f2:{}", field1,
-                field2);
         exchange.getAttributes().put(REQUEST_TIME_BEGIN, System.currentTimeMillis());
         return chain.filter(exchange).then(
                 Mono.fromRunnable(() -> {
@@ -42,6 +39,8 @@ public class RequestTimeGatewayFilter implements GatewayFilter, Ordered {
 
     @Override
     public int getOrder() {
-        return HIGHEST_PRECEDENCE;
+        return HIGHEST_PRECEDENCE + 1;
     }
+
+
 }
