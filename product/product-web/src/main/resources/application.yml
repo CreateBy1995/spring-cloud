@@ -2,15 +2,14 @@ server:
   port: 12000
 spring:
   cloud:
+    sentinel:
+      transport:
+#        dashboard: 39.104.70.173:8858
+         dashboard: 127.0.0.1:8080
+#        client-ip: 185.220.237.53
     nacos:
       discovery:
         server-addr: 39.104.70.173:8848
         namespace: ed6cf126-56a1-4dc6-b418-6887a55daaf2
   application:
     name: cloud-product
-
-#mybatis:
-#  mapper-locations: classpath:/mappers/*Mapper.xml
-#  typeAliasesPackage: pers.example.product.dao.domain
-#  configuration:
-#    map-underscore-to-camel-case: true

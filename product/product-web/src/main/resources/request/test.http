@@ -9,3 +9,12 @@ Content-Type: application/json
   "productName": "西瓜",
   "price": "10"
 }
+
+### echo test
+GET http://localhost:12000/echo/number?number=5
+
+### echo test
+GET http://localhost:12000/echo/number1?number=5
+
+### echo test2
+GET http://localhost:12000/echo/string?string=aaaa
