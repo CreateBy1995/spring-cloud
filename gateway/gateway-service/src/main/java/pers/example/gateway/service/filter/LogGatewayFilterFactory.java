@@ -1,7 +1,7 @@
 package pers.example.gateway.service.filter;
 
 //import com.alibaba.nacos.shaded.com.google.common.collect.Lists;
-import com.google.common.collect.Lists;
+
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
@@ -15,29 +15,21 @@ import java.util.List;
  * @Description:
  */
 @Slf4j
-public class LimitGatewayFilterFactory extends AbstractGatewayFilterFactory<LimitGatewayFilterFactory.Config> {
-    public static final String WINDOW_SIZE_KEY = "windowSize";
-
-    public static final String COUNT_KEY = "count";
-
-    public LimitGatewayFilterFactory(){
+public class LogGatewayFilterFactory extends AbstractGatewayFilterFactory<LogGatewayFilterFactory.Config> {
+    public LogGatewayFilterFactory(){
         super(Config.class);
     }
 
     @Override
     public List<String> shortcutFieldOrder() {
-        return Lists.newArrayList(WINDOW_SIZE_KEY, COUNT_KEY);
+        return super.shortcutFieldOrder();
     }
 
     @Override
     public GatewayFilter apply(Config config) {
-        return new LimitGatewayFilter(config);
+        return new LogGatewayFilter(config);
     }
     @Data
     public static class Config {
-        // 窗口大小 单位：分钟
-        private Integer windowSize;
-        // 调用次数
-        private Integer count;
     }
 }

@@ -2,13 +2,9 @@ package pers.example.gateway.service.filter;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
-//import org.apache.http.auth.AuthenticationException;
+import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
-import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
-import org.springframework.http.HttpHeaders;
-import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
@@ -19,8 +15,11 @@ import reactor.core.publisher.Mono;
  */
 @Data
 @Slf4j
-@Component
-public class LogFilter implements GlobalFilter, Ordered {
+public class LogGatewayFilter implements GatewayFilter, Ordered {
+
+    public LogGatewayFilter(LogGatewayFilterFactory.Config config) {
+    }
+
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
@@ -36,4 +35,6 @@ public class LogFilter implements GlobalFilter, Ordered {
     public int getOrder() {
         return HIGHEST_PRECEDENCE + 1;
     }
+
+
 }
